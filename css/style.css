@@ -8,10 +8,16 @@
 
 a {
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 button {
     cursor: pointer;
+}
+
+.active {
+    color: #91b656;
 }
 
 .line {
@@ -30,6 +36,7 @@ button {
 
 .logo {
     width: 120px;
+    cursor: pointer;
 }
 
 .header-area {
@@ -53,6 +60,7 @@ button {
 .header-element ul li {
     font-size: 18px;
     position: relative;
+    cursor: pointer;
 }
 
 .header-element ul li span {
@@ -113,6 +121,10 @@ button {
 /* header-end */
 /* main-start */
 
+.sliderSection {
+    position: relative;
+}
+
 .slider {
     display: flex;
     overflow: hidden;
@@ -147,7 +159,7 @@ button {
     color: #333333;
 }
 
-.slide-desc button {
+.slide-desc a {
     border: none;
     background: #91b656;
     color: white;
@@ -157,7 +169,7 @@ button {
     font-size: 14px;
 }
 
-.slide-desc button:hover {
+.slide-desc a:hover {
     background-color: black;
     transition: all 0.3s linear;
 }
@@ -173,6 +185,9 @@ button {
 .slidePoint {
     display: flex;
     gap: 10px;
+    position: absolute;
+    left: 200px;
+    bottom: 40px;
 }
 
 .slidePoint p {
@@ -181,4 +196,207 @@ button {
     opacity: 1;
     border-radius: 50%;
     background: #91b656;
+}
+
+.slidePoint p:hover {
+    background-color: black;
+}
+
+/* SliderSection end */
+/* BannerSection start */
+
+.banner-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.banner-wrap li {
+    position: relative;
+}
+
+.banner-wrap li a img {
+    width: 400px;
+}
+
+.bannerDesc h3 {
+    position: absolute;
+    top: 25px;
+    left: 35%;
+    text-align: center;
+}
+
+.bannerDesc a {
+    background: #91b656;
+    padding: 8px 16px;
+    border-radius: 5px;
+    color: white;
+    position: absolute;
+    bottom: 25px;
+    left: 38%;
+}
+
+.secondBannerDesc {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    color: white;
+    text-align: center;
+}
+
+.secondBannerDesc span {
+    border-bottom: 1px solid;
+    font-size: 14px;
+}
+
+.secondBannerDesc h2 {
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.secondBannerDesc h4 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.secondBannerDesc a {
+    position: unset;
+    background-color: #222222;
+    padding: 8px 20px;
+}
+
+/* bannerSection end */
+/* productSection start */
+
+.shopify-product h2 {
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.productList {
+    width: fit-content;
+    margin-bottom: 25px;
+}
+
+.productList ul {
+    display: flex;
+    width: max-content;
+    gap: 15px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(0 0 0 / 22%);
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.productList ul li {
+    cursor: pointer;
+}
+
+.products{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 200px);
+}
+
+.productImg{
+    position: relative;
+}
+
+.hover{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    object-fit: contain;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.productImg:hover .hover{
+    opacity: 1;
+    display: block;
+}
+
+.productImg span{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    background: red;
+    color: white;
+    padding: 2px 10px;
+    z-index: 100;
+}
+
+.productImg img{
+    width: 200px;
+}
+
+.productIcon{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.productIcon i{
+    background: white;
+    padding: 10px;
+    font-size: 20px;
+    box-shadow: 0 0 10px #0000001a;
+    border-radius: 3px;
+    transition: all 0.3s linear;
+    display: none;
+}
+
+.productIcon i:hover{
+    color: white;
+    background-color: #91b656;
+}
+
+.productItem{
+    transition: all 0.3s linear;
+}
+
+.productItem:hover .productIcon i{
+    display: block;
+}
+
+.productDesc p{
+    transition: all 0.3s linear;
+}
+
+.productDesc p:hover{
+    color: #91b656;
+    cursor: pointer;
+}
+
+.rating ul{
+    display: flex;
+    gap: 5px;
+    margin: 7px 0;
+}
+
+.rating ul li{
+    color: #ffb503;
+}
+
+.productPrice{
+    display: flex;
+    gap: 7px;
+}
+
+.newPrice{
+    font-weight: 600;
+}
+
+.oldPrice{
+    text-decoration: line-through;
+    color: #878787;
 }
