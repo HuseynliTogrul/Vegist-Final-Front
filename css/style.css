@@ -422,3 +422,26 @@ button {
     position: relative;
     padding: 14px 15px;
 }
+
+.sliderIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.sliderIcon i{
+    color: #91b656;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 50%;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid #91b656;
+    cursor: pointer;
+}
