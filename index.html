@@ -140,7 +140,7 @@
             <div class="container">
                 <div class="slider">
                     <div class="slide">
-                        <i class="fa-solid fa-angles-left"></i>
+                        <i class="fa-solid fa-angles-left slideLeft"></i>
                         <div class="slide-desc">
                             <p>Fresh meat</p>
                             <h3>Spices for <br> cooking</h3>
@@ -149,7 +149,7 @@
                         <div class="slide-img">
                             <img src="./assets/images/sliderImg.webp" alt="sliderImg">
                         </div>
-                        <i class="fa-solid fa-angles-right"></i>
+                        <i class="fa-solid fa-angles-right slideRight"></i>
                     </div>
                     <!-- <div class="slide">
                         <div class="slide-desc">
@@ -202,9 +202,9 @@
                                 <a href="#">Order Now</a>
                         </div>
                     </Li>
-                    <Li>
+                    <Li class="bannerWrapLast">
                         <a href="">
-                            <img src="./assets/images/banners-1.webp" alt="banners">
+                            <img src="./assets/images/banners-3.webp" alt="banners">
                         </a>
                         <div class="bannerDesc">
                             <h3>Organic <br> fresh fruit</h3>
@@ -470,97 +470,108 @@
             </div>
         </div>
         <div class="line"></div>
+        <div class="scroll">
+            <i class="fa-solid fa-angles-up"></i>
+        </div>
     </main>
 
     <footer>
         <div class="footer-area">
             <div class="container">
                 <div class="footer-main">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="./assets/images/logo.svg" alt="Logo">
-                        </a>
-                    </div>
-                    <div class="mail">
-                        <i class="fa-regular fa-envelope"></i>
-                        <p>Join our newsletter</p>
-                    </div>
-                    <div class="mailInput">
-                        <input type="text" placeholder="email@example.com">
-                        <i class="fa-regular fa-envelope"></i>
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./assets/images/logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="mail">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>Join our newsletter</p>
+                        </div>
+                        <div class="mailInput">
+                            <input type="text" placeholder="email@example.com">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
                     </div>
                     <div class="footerList">
-                        <div class="listHeader">
-                            <h3>About vegist</h3>
-                            <!-- <i class="fa-solid fa-minus"></i> -->
-                            <i class="fa-solid fa-plus"></i>
+                        <div class="footerAbout">
+                            <div class="listHeader">
+                                <h3>About vegist</h3>
+                                <!-- <i class="fa-solid fa-minus"></i> -->
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="footerSubList">
+                                <ul>
+                                    <li>
+                                        <a href="">About vegist</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Faq's</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Store location</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="footerSubList">
-                            <ul>
-                                <li>
-                                    <a href="">About vegist</a>
-                                </li>
-                                <li>
-                                    <a href="">Faq's</a>
-                                </li>
-                                <li>
-                                    <a href="">Contact us</a>
-                                </li>
-                                <li>
-                                    <a href="">News</a>
-                                </li>
-                                <li>
-                                    <a href="">Store location</a>
-                                </li>
-                            </ul>
+                        <div class="footerAccount">
+                            <div class="listHeader">
+                                <h3>Account</h3>
+                                <!-- <i class="fa-solid fa-minus"></i> -->
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="footerSubList">
+                                <ul>
+                                    <li>
+                                        <a href="">My cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Wishlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Sign in</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Shipping details</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Help center</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="listHeader">
-                            <h3>Account</h3>
-                            <!-- <i class="fa-solid fa-minus"></i> -->
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                        <div class="footerSubList">
-                            <ul>
-                                <li>
-                                    <a href="">My cart</a>
-                                </li>
-                                <li>
-                                    <a href="">Wishlist</a>
-                                </li>
-                                <li>
-                                    <a href="">Sign in</a>
-                                </li>
-                                <li>
-                                    <a href="">Shipping details</a>
-                                </li>
-                                <li>
-                                    <a href="">Help center</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="listHeader">
-                            <h3>Contact</h3>
-                            <!-- <i class="fa-solid fa-minus"></i> -->
-                            <i class="fa-solid fa-plus"></i>
-                        </div>
-                        <div class="footerSubList">
-                            <ul>
-                                <li>
-                                    <a href="">demo@support.com</a>
-                                </li>
-                                <li>
-                                    <a href="">+988 2531 5468</a>
-                                </li>
-                                <li>
-                                    <a href="">We’re located in australia</a>
-                                </li>
-                                <li>
-                                    <a href="">Customer care hours</a>
-                                </li>
-                                <li>
-                                    <a href="">10:00 AM - 11:30 PM </a>
-                                </li>
-                            </ul>
+                        <div class="footerContact">
+                            <div class="listHeader">
+                                <h3>Contact</h3>
+                                <!-- <i class="fa-solid fa-minus"></i> -->
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="footerSubList">
+                                <ul>
+                                    <li>
+                                        <a href="">demo@support.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="">+988 2531 5468</a>
+                                    </li>
+                                    <li>
+                                        <a href="">We’re located in australia</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Customer care hours</a>
+                                    </li>
+                                    <li>
+                                        <a href="">10:00 AM - 11:30 PM </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>

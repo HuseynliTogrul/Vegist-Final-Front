@@ -42,12 +42,13 @@ button {
 
 .header-area {
     position: fixed;
-    z-index: 2;
+    z-index: 5;
     top: 0;
     left: 0;
     right: 0;
     background-color: white;
     border: 1px solid rgb(0 0 0 / 5%);
+    /* animation: smoothScroll 1s forwards; */
 }
 
 header .line {
@@ -154,7 +155,6 @@ header .line {
 
 .MenuSlider ul li {
     width: 400px;
-    /* margin-right: 15px; */
     display: flex;
     align-items: center;
     gap: 20px;
@@ -199,10 +199,19 @@ header .line {
     color: white;
     padding: 7px;
     cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.slideRight:hover,
+.slideLeft:hover{
+    background-color: inherit;
+    border: 1px solid #91b656;
+    color: #91b656;
 }
 
 .slide i:first-child {
     left: 15px;
+    cursor: pointer;
 }
 
 .slide i:last-child {
@@ -213,6 +222,7 @@ header .line {
     position: absolute;
     padding-left: 15px;
 }
+
 
 .slide-desc p {
     color: #7da63f;
@@ -296,7 +306,7 @@ header .line {
 .bannerDesc h3 {
     position: absolute;
     top: 25px;
-    left: 40%;
+    left: 37%;
     text-align: center;
 }
 
@@ -307,7 +317,12 @@ header .line {
     color: white;
     position: absolute;
     bottom: 25px;
-    left: 38%;
+    left: 37%;
+    transition: all 0.3s linear;
+}
+
+.bannerDesc a:hover{
+    background-color: #222222;
 }
 
 .secondBannerDesc {
@@ -338,6 +353,10 @@ header .line {
     position: unset;
     background-color: #222222;
     padding: 8px 20px;
+}
+
+.secondBannerDesc a:hover{
+    background: #91b656;
 }
 
 /* bannerSection end */
@@ -371,6 +390,14 @@ header .line {
 
 .productList ul li {
     cursor: pointer;
+}
+
+.productList ul li a{
+    transition: all 0.3s linear;
+}
+
+.productList ul li a:hover{
+    color: #91b656;
 }
 
 .products {
@@ -481,18 +508,19 @@ header .line {
 /* categorySection start */
 
 .shopify-category h2 {
+    font-weight: 500;
     padding: 100px 0 30px;
     text-align: center;
 }
 
 .categories {
     display: grid;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
 .category a img {
-    width: 200px;
+    width: 100%;
 }
 
 .categories a p {
@@ -580,6 +608,27 @@ header .line {
     color: #91b656;
 }
 
+.scroll {
+    color: #fff;
+    font-size: 16px;
+    position: fixed;
+    bottom: 80px;
+    right: 30px;
+    line-height: 1;
+    /* display: none; */
+    padding: 14px 16px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #91b656;
+    z-index: 1;
+    transition: all 0.3s linear;
+}
+
+.scroll:hover{
+    background-color: #222222;
+    color: #91b656;
+}
+
 /* serviceArea end */
 /* footer-area start */
 
@@ -658,6 +707,12 @@ header .line {
     top: 18px;
     color: #91b656;
     font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.mailInput i:hover{
+   color: #222222;
 }
 
 .footer-bottom {
@@ -671,6 +726,18 @@ header .line {
 }
 
 /* footer-area end */
+
+@media (min-width: 476px) and (max-width: 1000px) {
+    .service ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .slide-img img {
+        height: 300px;
+    }
+}
 
 @media (min-width: 760px) and (max-width: 2000px) {
     .slide i {
@@ -687,9 +754,35 @@ header .line {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .bannerWrapLast {
+        left: 50%;
+    }
+
     .secondBannerDesc {
         top: 20%;
         left: 25%;
+    }
+
+    .categories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .sliderIcon {
+        position: absolute;
+        top: 78px;
+        right: 0px;
+    }
+
+    .shopify-category {
+        position: relative;
+    }
+
+    .shopify-category h2 {
+        text-align: left;
+    }
+
+    .categories {
+        padding-bottom: 80px;
     }
 }
 
@@ -707,6 +800,10 @@ header .line {
 @media (min-width: 1000px) and (max-width: 1200px) {
     .container {
         max-width: 1000px;
+    }
+
+    .bannerWrapLast {
+        left: 0%;
     }
 
     .header-element ul {
@@ -737,7 +834,74 @@ header .line {
     }
 
     .products {
+        gap: 20px;
         grid-template-columns: repeat(4, 1fr);
+    }
+
+    .categories {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .sliderIcon {
+        position: absolute;
+        top: 78px;
+        right: 0px;
+    }
+
+    .shopify-category {
+        position: relative;
+    }
+
+    .shopify-category h2 {
+        text-align: left;
+    }
+
+    .categories {
+        padding-bottom: 80px;
+    }
+
+    .service ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer-main {
+        display: flex;
+    }
+
+    .footerSubList {
+        display: block;
+    }
+
+    .footerList {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-logo {
+        width: calc(23% - 30px);
+    }
+
+    .footer-main .logo {
+        margin: 30px 0 5px;
+    }
+
+    .listHeader {
+        border: none;
+    }
+
+    .listHeader i {
+        display: none;
+    }
+
+    .mail {
+        width: max-content;
+        margin: 15px 0 25px;
+    }
+
+    .mailInput {
+        width: max-content;
     }
 }
 
@@ -750,6 +914,10 @@ header .line {
 @media (min-width: 1200px) and (max-width: 2000px) {
     .container {
         max-width: 1200px;
+    }
+
+    .bannerWrapLast {
+        left: 0%;
     }
 
     .header-element ul li:nth-child(1) {
@@ -813,6 +981,10 @@ header .line {
         grid-template-columns: repeat(5, 1fr);
     }
 
+    .categories {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
     .shopify-product h2 {
         font-size: 30px;
     }
@@ -820,6 +992,70 @@ header .line {
     .productList ul {
         gap: 30px;
         font-size: 18px;
+    }
+
+    .sliderIcon {
+        position: absolute;
+        top: 78px;
+        right: 0px;
+    }
+
+    .shopify-category {
+        position: relative;
+    }
+
+    .shopify-category h2 {
+        text-align: left;
+        font-size: 30px;
+    }
+
+    .categories {
+        padding-bottom: 80px;
+    }
+
+    .service ul {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .service ul {
+        gap: 0px;
+        font-size: 20px;
+    }
+
+    .footer-main {
+        display: flex;
+    }
+
+    .footerSubList {
+        display: block;
+    }
+
+    .footerList {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-main .logo {
+        margin: 30px 0 5px;
+    }
+
+    .listHeader {
+        border: none;
+    }
+
+    .listHeader i {
+        display: none;
+    }
+
+    .mail {
+        width: max-content;
+        margin: 15px 0 25px;
+    }
+
+    .mailInput {
+        width: max-content;
     }
 }
 
