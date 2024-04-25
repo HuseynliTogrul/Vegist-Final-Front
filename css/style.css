@@ -249,8 +249,8 @@ button {
     display: flex;
     gap: 10px;
     position: absolute;
-    left: 200px;
-    bottom: 40px;
+    left: 50%;
+    bottom: 5%;
 }
 
 .slidePoint p {
@@ -269,8 +269,10 @@ button {
 /* BannerSection start */
 
 .banner-wrap {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     align-items: center;
     gap: 20px;
 }
@@ -280,7 +282,7 @@ button {
 }
 
 .banner-wrap li a img {
-    width: 400px;
+    width: 100%;
 }
 
 .bannerDesc h3 {
@@ -669,6 +671,17 @@ button {
     }
 }
 
+@media (min-width: 600px) and (max-width: 1024px){
+    .banner-wrap {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .secondBannerDesc {
+        top: 20%;
+        left: 25%;
+    }
+}
+
 
 @media (min-width: 760px) and (max-width: 1000px) {
     .container {
@@ -696,6 +709,16 @@ button {
 
     .slide-desc p {
         font-size: 20px;
+    }
+
+    .banner-wrap {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .secondBannerDesc {
+        position: absolute;
+        top: 20%;
+        left: 23%;
     }
 }
 
@@ -761,6 +784,9 @@ button {
 
     .slide-desc p {
         font-size: 30px;
+    }
+    .banner-wrap {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
