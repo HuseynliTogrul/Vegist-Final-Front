@@ -184,7 +184,8 @@ button {
     position: relative;
 }
 
-.slide i{
+.slide i {
+    display: none;
     position: absolute;
     background: #91b656;
     color: white;
@@ -192,11 +193,11 @@ button {
     cursor: pointer;
 }
 
-.slide i:first-child{
+.slide i:first-child {
     left: 15px;
 }
 
-.slide i:last-child{
+.slide i:last-child {
     right: 15px;
 }
 
@@ -658,6 +659,16 @@ button {
 
 /* footer-area end */
 
+@media (min-width: 760px) and (max-width: 2000px) {
+    .slide i {
+        display: block;
+    }
+
+    .slide-desc {
+        padding-left: 70px;
+    }
+}
+
 
 @media (min-width: 760px) and (max-width: 1000px) {
     .container {
@@ -675,6 +686,15 @@ button {
     }
 
     .header-element ul li {
+        font-size: 20px;
+    }
+
+    .slide-desc h3 {
+        font-size: 35px;
+        padding: 10px 0 25px;
+    }
+
+    .slide-desc p {
         font-size: 20px;
     }
 }
@@ -728,6 +748,19 @@ button {
 
     .categoryMenu {
         display: block;
+    }
+
+    .slide-desc {
+        padding-left: 90px;
+    }
+
+    .slide-desc h3 {
+        font-size: 50px;
+        padding: 15px 0 35px;
+    }
+
+    .slide-desc p {
+        font-size: 30px;
     }
 }
 
