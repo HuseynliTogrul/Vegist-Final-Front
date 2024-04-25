@@ -41,9 +41,17 @@ button {
 }
 
 .header-area {
-    position: sticky;
+    position: fixed;
+    z-index: 2;
     top: 0;
+    left: 0;
+    right: 0;
     background-color: white;
+    border: 1px solid rgb(0 0 0 / 5%);
+}
+
+header .line {
+    padding-top: 93px;
 }
 
 .header-main {
@@ -339,22 +347,25 @@ button {
     text-align: center;
     font-weight: 600;
     line-height: 1.4;
-    margin-bottom: 20px;
+    padding-top: 100px;
+    padding-bottom: 30px;
 }
 
 .productList {
-    width: fit-content;
+    /* width: fit-content; */
     margin-bottom: 25px;
 }
 
 .productList ul {
     display: flex;
-    width: max-content;
+    justify-content: center;
+    align-items: center;
+    /* width: max-content; */
     gap: 15px;
     text-transform: uppercase;
     border-bottom: 1px solid rgb(0 0 0 / 22%);
     padding-bottom: 5px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -365,7 +376,7 @@ button {
 .products {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .productImg {
@@ -399,7 +410,7 @@ button {
 }
 
 .productImg img {
-    width: 200px;
+    width: 100%;
 }
 
 .productIcon {
@@ -671,7 +682,7 @@ button {
     }
 }
 
-@media (min-width: 600px) and (max-width: 1024px){
+@media (min-width: 600px) and (max-width: 1024px) {
     .banner-wrap {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -686,6 +697,10 @@ button {
 @media (min-width: 760px) and (max-width: 1000px) {
     .container {
         max-width: 720px;
+    }
+
+    .products {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
@@ -719,6 +734,10 @@ button {
         position: absolute;
         top: 20%;
         left: 23%;
+    }
+
+    .products {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
@@ -785,8 +804,22 @@ button {
     .slide-desc p {
         font-size: 30px;
     }
+
     .banner-wrap {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .products {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .shopify-product h2 {
+        font-size: 30px;
+    }
+
+    .productList ul {
+        gap: 30px;
+        font-size: 18px;
     }
 }
 
