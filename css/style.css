@@ -42,12 +42,13 @@ button {
 
 .header-area {
     position: fixed;
-    z-index: 5;
+    z-index: 10;
     top: 0;
     left: 0;
     right: 0;
     background-color: white;
     border: 1px solid rgb(0 0 0 / 5%);
+    box-shadow: 0 0 15px rgb(0 0 0 / 15%);
     /* animation: smoothScroll 1s forwards; */
 }
 
@@ -622,6 +623,7 @@ header .line {
     background-color: #91b656;
     z-index: 1;
     transition: all 0.3s linear;
+    cursor: pointer;
 }
 
 .scroll:hover{
