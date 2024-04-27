@@ -177,6 +177,30 @@ header .line {
 /* header-end */
 /* main-start */
 
+.breadcrumb{
+    margin-top: 30px;
+    background: #fafafa;
+}
+
+.breadcrumb-list{
+    padding-bottom: 15px;
+}
+
+.breadcrumb-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.breadcrumb-list ul li{
+    color: #717171;
+}
+
+.breadcrumb-list ul li a{
+    color: #717171;
+    margin-right: 7px;
+}
+
 .sliderSection {
     position: relative;
 }
