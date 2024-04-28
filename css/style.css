@@ -67,11 +67,6 @@ header .line {
     display: none;
 }
 
-/* .menu-bar ul li{
-    display: flex;
-    gap: 5px;
-} */
-
 .header-element ul {
     display: flex;
     align-items: center;
@@ -164,39 +159,35 @@ header .line {
     background-color: #f8f3f0;
 }
 
-/* .MenuSlider ul li p {
-    padding: 0 30%;
-} */
-
 .header-wrap {
+    margin: 10px 0;
     display: flex;
     align-items: center;
-    /* background-color: #91b656; */
 }
 
 /* header-end */
 /* main-start */
 
-.breadcrumb{
+.breadcrumb {
     margin-top: 30px;
     background: #fafafa;
 }
 
-.breadcrumb-list{
+.breadcrumb-list {
     padding-bottom: 15px;
 }
 
-.breadcrumb-list ul{
+.breadcrumb-list ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.breadcrumb-list ul li{
+.breadcrumb-list ul li {
     color: #717171;
 }
 
-.breadcrumb-list ul li a{
+.breadcrumb-list ul li a {
     color: #717171;
     margin-right: 7px;
 }
@@ -228,7 +219,7 @@ header .line {
 }
 
 .slideRight:hover,
-.slideLeft:hover{
+.slideLeft:hover {
     background-color: inherit;
     border: 1px solid #91b656;
     color: #91b656;
@@ -346,7 +337,7 @@ header .line {
     transition: all 0.3s linear;
 }
 
-.bannerDesc a:hover{
+.bannerDesc a:hover {
     background-color: #222222;
 }
 
@@ -380,7 +371,7 @@ header .line {
     padding: 8px 20px;
 }
 
-.secondBannerDesc a:hover{
+.secondBannerDesc a:hover {
     background: #91b656;
 }
 
@@ -417,11 +408,11 @@ header .line {
     cursor: pointer;
 }
 
-.productList ul li a{
+.productList ul li a {
     transition: all 0.3s linear;
 }
 
-.productList ul li a:hover{
+.productList ul li a:hover {
     color: #91b656;
 }
 
@@ -640,7 +631,6 @@ header .line {
     bottom: 80px;
     right: 30px;
     line-height: 1;
-    /* display: none; */
     padding: 14px 16px;
     text-align: center;
     border-radius: 50%;
@@ -650,7 +640,7 @@ header .line {
     cursor: pointer;
 }
 
-.scroll:hover{
+.scroll:hover {
     background-color: #222222;
     color: #91b656;
 }
@@ -737,8 +727,8 @@ header .line {
     transition: all 0.3s linear;
 }
 
-.mailInput i:hover{
-   color: #222222;
+.mailInput i:hover {
+    color: #222222;
 }
 
 .footer-bottom {
@@ -930,12 +920,6 @@ header .line {
         width: max-content;
     }
 }
-
-/* @media (min-width: 1200px) and (max-width: 1500) {
-    .container{
-        max-width: 1200px;
-    }
-} */
 
 @media (min-width: 1200px) and (max-width: 2000px) {
     .container {
