@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./css/wishlist.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -73,13 +73,13 @@
                                 </a>
                             </Li>
                             <Li>
-                                <a href="./wishlist.html">
+                                <a href="#">
                                     <i class="fa-regular fa-heart"></i>
                                     <span>0</span>
                                 </a>
                             </Li>
                             <Li>
-                                <a href="./basket.html">
+                                <a href="#">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                     <span>0</span>
                                 </a>
@@ -145,55 +145,65 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <p>/ Account</p>
+                            <p>/ Wishlist</p>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="loginSection">
+        <div class="favouriteProduct">
             <div class="container">
-                <div class="resetPassword">
-                    <div class="login-left">
-                        <h2>Reset your password</h2>
-                        <p>We will send you an email to reset your password.</p>
-                        <div class="emailForm">
-                            <label for="fname">Email</label>
-                            <input type="text" id="fname" name="fname" placeholder="Email">
+                <h2>Favourite Product</h2>
+                <div class="products">
+                    <div class="productItem">
+                        <div class="productImg">
+                            <span>10%</span>
+                            <img src="./assets/images/product1.webp" alt="product">
+                            <img src="./assets/images/product1-Hover.webp" class="hover DisplayNone" alt="productHover">
+                            <div class="productIcon">
+                                <a href="">
+                                    <i class="fa-regular fa-heart"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </a>
+                                <a href="">
+                                    <i class="fa-regular fa-eye"></i>
+                                </a>
+                            </div>
                         </div>
-                        <button>Submit</button>
-                        <a href="">Cancel</a>
-                    </div>
-                </div>
-                <div class="login">
-                    <div class="login-left">
-                        <h2>Login</h2>
-                        <p>Please login below account detail</p>
-                        <div class="loginForm">
-                            <label for="fname">Email</label>
-                            <input type="text" id="fname" name="fname" placeholder="Email">
-                        </div>
-                        <div class="loginForm">
-                            <label for="lname">Password</label>
-                            <input type="text" id="lname" name="lname" placeholder="Password">
-                        </div>
-                        <button>Sign in</button>
-                        <a href="">Forgot your password?</a>
-                    </div>
-                    <div class="login-right">
-                        <div class="loginAccount">
-                            <h4>Don't have an account?</h4>
-                            <a href="./createAccount.html">Create account</a>
-                        </div>
-                        <p>* Terms & conditions.</p>
-                        <div class="loginPrivacy">
-                            <p>Your privacy and security are important to us. For more information on how we use your
-                                data read our <a href="">privacy policy</a>
-                            </p>
+                        <div class="productDesc">
+                            <p>Blackberry 100%organic</p>
+                            <div class="rating">
+                                <ul>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-solid fa-star"></i>
+                                    </li>
+                                    <li>
+                                        <i class="fa-regular fa-star"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="productPrice">
+                                <div class="newPrice">€18.00</div>
+                                <div class="oldPrice">€20.00</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="favouriteNotProduct">
+            <p>Your wishlist is empty <a href="./shop.html">Return to store</a></p>
         </div>
     </main>
 
