@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/basket.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-area">
+            <div class="container">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./assets/images/logo.svg" alt="Logo">
+                        </a>
+                    </div>
+                    <div class="menu-bar">
+                        <ul>
+                            <li>
+                                <a href="index.html">
+                                    <p>Home</p>
+                                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./shop.html">
+                                    <p>Shop</p>
+                                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Collection</p>
+                                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>Blogs</p>
+                                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contact.html">
+                                    <p>Contact us</p>
+                                    <!-- <i class="fa-solid fa-chevron-down"></i> -->
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-element">
+                        <ul>
+                            <Li>
+                                <i class="fa-solid fa-bars menubar"></i>
+                            </Li>
+                            <Li>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </Li>
+                            <Li>
+                                <a href="./login.html">
+                                    <i class="fa-regular fa-user"></i>
+                                </a>
+                            </Li>
+                            <Li>
+                                <a href="./wishlist.html">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <span>0</span>
+                                </a>
+                            </Li>
+                            <Li>
+                                <a href="./basket.html">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span>0</span>
+                                </a>
+                            </Li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="categoryMenu DisplayNone">
+                        <div class="CategoryHeader">
+                            <div class="categoryMenu-left">
+                                <i class="fa-solid fa-grip"></i>
+                                <p>Best seller</p>
+                            </div>
+                            <div class="categoryMenu-right">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                        </div>
+                        <div class="CategoryList DisplayNone">
+                            <ul>
+                                <Li>Fresh vegetable</Li>
+                                <Li>Fresh vegetable</Li>
+                                <Li>Fresh vegetable</Li>
+                                <Li>Fresh vegetable</Li>
+                                <Li>Fresh vegetable</Li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="MenuSlider">
+                        <i class="fa-solid fa-chevron-left"></i>
+                        <ul>
+                            <Li>
+                                <img src="./assets/images/mini-img.webp" alt="mini-img">
+                                <p>Haldi powder</p>
+                            </Li>
+                            <!-- <Li>
+                                <img src="./assets/images/mini-img.webp" alt="mini-img">
+                                <p>Haldi powder</p>
+                            </Li>
+                            <Li>
+                                <img src="./assets/images/mini-img.webp" alt="mini-img">
+                                <p>Haldi powder</p>
+                            </Li> -->
+                        </ul>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <div class="container">
+                <div class="breadcrumb-list">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <p>/ Your Shopping Cart</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="basketSection">
+            <div class="container">
+                <div class="basket">
+                    <div class="basket-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Quantity</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="item-media">
+                                            <div class="media-img">
+                                                <a href="./product.html">
+                                                    <img src="./assets/images/product1.webp" alt="product1">
+                                                </a>
+                                            </div>
+                                            <div class="media-info">
+                                                <div class="media-title">
+                                                    <a href="./product.html">Fresh apple (5kg)</a>
+                                                </div>
+                                                <div class="media-price">
+                                                    <p class="discPrice">€14.00</p>
+                                                    <p class="sellPrice">€20.00</p>
+                                                </div>
+                                                <div class="media-size">
+                                                    <span>Size:</span>
+                                                    <p>2kg</p>
+                                                </div>
+                                                <div class="media-material">
+                                                    <span>Material:</span>
+                                                    <p>India</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-quantity">
+                                            <div class="quantity-count">
+                                                <button>-</button>
+                                                <input type="number" value="1">
+                                                <button>+</button>
+                                            </div>
+                                            <div class="quantity-icon">
+                                                <i class="fa-regular fa-trash-can"></i>
+                                            </div>
+                                        </div>
+                                        <div class="item-total">
+                                            <p>€14.00</p>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="line"></div>
+        <div class="footer-area">
+            <div class="container">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <div class="logo">
+                            <a href="index.html">
+                                <img src="./assets/images/logo.svg" alt="Logo">
+                            </a>
+                        </div>
+                        <div class="mail">
+                            <i class="fa-regular fa-envelope"></i>
+                            <p>Join our newsletter</p>
+                        </div>
+                        <div class="mailInput">
+                            <input type="text" placeholder="email@example.com">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                    </div>
+                    <div class="footerList">
+                        <div class="footerAbout">
+                            <div class="listHeader">
+                                <h3>About vegist</h3>
+                                <!-- <i class="fa-solid fa-minus"></i> -->
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="footerSubList">
+                                <ul>
+                                    <li>
+                                        <a href="">About vegist</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Faq's</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Contact us</a>
+                                    </li>
+                                    <li>
+                                        <a href="">News</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Store location</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footerAccount">
+                            <div class="listHeader">
+                                <h3>Account</h3>
+                                <!-- <i class="fa-solid fa-minus"></i> -->
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="footerSubList">
+                                <ul>
+                                    <li>
+                                        <a href="">My cart</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Wishlist</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Sign in</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Shipping details</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Help center</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footerContact">
+                            <div class="listHeader">
+                                <h3>Contact</h3>
+                                <!-- <i class="fa-solid fa-minus"></i> -->
+                                <i class="fa-solid fa-plus"></i>
+                            </div>
+                            <div class="footerSubList">
+                                <ul>
+                                    <li>
+                                        <a href="">demo@support.com</a>
+                                    </li>
+                                    <li>
+                                        <a href="">+988 2531 5468</a>
+                                    </li>
+                                    <li>
+                                        <a href="">We’re located in australia</a>
+                                    </li>
+                                    <li>
+                                        <a href="">Customer care hours</a>
+                                    </li>
+                                    <li>
+                                        <a href="">10:00 AM - 11:30 PM </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © 2024 by spacingtech</p>
+        </div>
+        <div class="scroll">
+            <i class="fa-solid fa-angles-up"></i>
+        </div>
+    </footer>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
