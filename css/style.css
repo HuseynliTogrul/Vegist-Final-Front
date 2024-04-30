@@ -454,6 +454,10 @@ header .line {
     z-index: 10;
 }
 
+.productImg a{
+    cursor: pointer;
+}
+
 .productImg img {
     width: 100%;
 }

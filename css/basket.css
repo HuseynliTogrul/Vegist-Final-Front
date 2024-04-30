@@ -9,7 +9,7 @@ input[type=number] {
     -moz-appearance: textfield;
 }
 
-.basket{
+.basket {
     margin-bottom: 50px;
 }
 
@@ -220,6 +220,26 @@ input[type=number] {
     width: 100%;
     padding: 10px 15px;
     border: 1px solid rgba(0, 0, 0, 10%);
+    resize: vertical;
+}
+
+.notProduct {
+    display: none;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.notProduct a {
+    border-bottom: 1px solid black;
+    transition: all 0.3s linear;
+}
+
+.notProduct a:hover {
+    border-bottom: 1px solid #91b656;
+    color: #91b656;
 }
 
 
@@ -249,6 +269,10 @@ input[type=number] {
 
     .item-total {
         margin-bottom: 0px;
+    }
+
+    .notProduct {
+        font-size: 25px;
     }
 }
 
