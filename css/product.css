@@ -1,0 +1,10 @@
+.detailImg-slider{
+    width: max-content;
+    display: flex;
+    gap: 10px;
+}
+
+.detailImg-slider img{
+    width: 200px;
+    height: 200px;
+}
