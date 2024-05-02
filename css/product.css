@@ -1,10 +1,56 @@
-.detailImg-slider{
+.detail-img {
+    width: max-content;
+}
+
+.mainImg {
+    position: relative;
+    transition: all 0.3s linear;
+}
+
+.mainImg img {
+    width: 100%;
+    cursor: crosshair;
+}
+
+.mainImg i {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 40px;
+    background: #e8e6e6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.mainImg:hover .mainImgIcon {
+    display: flex;
+}
+
+.mainImg i:hover {
+    background-color: #91b656;
+    color: white;
+}
+
+.mainImg i:first-child {
+    left: 10px;
+}
+
+.mainImg i:last-child {
+    right: 10px;
+}
+
+.detailImg-slider {
     width: max-content;
     display: flex;
     gap: 10px;
 }
 
-.detailImg-slider img{
-    width: 200px;
-    height: 200px;
+.detailImg-slider img {
+    width: 120px;
+    cursor: pointer;
 }
