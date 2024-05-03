@@ -1,0 +1,39 @@
+.blogBrand img{
+    width: 100%;
+}
+
+.blogBrand h4{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.blog-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.blog-info ul li{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6f6f6f;
+}
+
+.blog-info ul li span{
+    color: #91b656;
+}
+
+.blogBrand p{
+    color: #6f6f6f;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.blogImgDesc img{
+    float: left;
+}
