@@ -1,4 +1,4 @@
-.blogBrand img{
+.blogBrandImg img{
     width: 100%;
 }
 
@@ -36,4 +36,5 @@
 
 .blogImgDesc img{
     float: left;
+    margin-right: 15px;
 }
