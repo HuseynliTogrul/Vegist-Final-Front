@@ -65,6 +65,7 @@
     justify-content: center;
     font-size: 15px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .login-right h4 {
@@ -122,6 +123,17 @@
     background-color: inherit;
 }
 
+.emailForm{
+    margin-top: 15px;
+}
+
+.emailForm input{
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 5px;
+    border: 1px solid rgba(0, 0, 0, 10%);
+}
+
 @media (min-width: 700px) and (max-width: 2000px) {
     .login {
         display: flex;
@@ -133,7 +145,7 @@
     }
 
     .login-left {
-        width: 50%;
+        width: 100%;
         padding: 30px;
     }
 
@@ -161,6 +173,10 @@
 
     .loginForm {
         margin-top: 30px;
+    }
+
+    .login-left {
+        width: 60%;
     }
 
     .login-left h2 {

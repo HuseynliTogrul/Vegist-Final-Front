@@ -22,8 +22,8 @@ input[type=number] {
     border-collapse: collapse;
 }
 
-.basket-table thead {
-    /* border-bottom: 10px solid rgba(0, 0, 0, 15%); */
+.basket-table thead tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 15%);
 }
 
 .basket-table tr th {
@@ -276,8 +276,8 @@ input[type=number] {
     }
 }
 
-@media (min-width: 1000px) and (max-width: 2000px) {
+/* @media (min-width: 1000px) and (max-width: 2000px) {
     .basket {
         width: 70%;
     }
-}
+} */
