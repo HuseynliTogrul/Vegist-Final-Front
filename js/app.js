@@ -6,6 +6,8 @@ const searchSection = document.querySelector(".searchSection");
 
 const searchButton = document.querySelector(".search button");
 
+const productIcon = document.querySelector(".productIcon i")
+
 
 window.onkeydown = function (event) {
     if (event.keyCode == 27) {
