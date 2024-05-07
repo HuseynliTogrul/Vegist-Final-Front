@@ -10,7 +10,7 @@ const productIcon = document.querySelector(".productIcon i")
 
 
 window.onkeydown = function (event) {
-    if (event.keyCode == 27) {
+    if (event.keyCode == 27) {        
         searchSection.style.display = "none";
     }
 };
