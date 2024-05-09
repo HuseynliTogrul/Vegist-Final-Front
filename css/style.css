@@ -319,11 +319,16 @@ header .line {
 }
 
 .slider {
+    /* width: 800px;
+    height: 500px;
+    border-radius: 10px; */
     overflow: hidden;
     gap: 15px;
 }
 
 .slide {
+    /* width: 500%;
+    height: 500px; */
     display: flex;
     align-items: center;
     overflow: hidden;
