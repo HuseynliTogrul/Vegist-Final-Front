@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
-<body>
+<body id="body">
     <header>
         <div class="header-area">
             <div class="container">
@@ -60,7 +61,7 @@
                     </div>
                     <div class="header-element">
                         <ul>
-                            <Li>
+                            <Li class="menubarIcon">
                                 <i class="fa-solid fa-bars menubar"></i>
                             </Li>
                             <Li class="searchIcon">
@@ -72,7 +73,7 @@
                                 </a>
                             </Li>
                             <Li>
-                                <a href="./wishlist.html">
+                                <a href="./wishlist.html" class="wish">
                                     <i class="fa-regular fa-heart"></i>
                                     <span>0</span>
                                 </a>
@@ -136,7 +137,7 @@
         <div class="searchSection">
             <div class="container">
                 <div class="search">
-                    <button>
+                    <button id="close-search">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                     <div class="search-title">
@@ -149,51 +150,73 @@
                 </div>
             </div>
         </div>
+        <div class="menu-mobile">
+            <div class="menu-header">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="main-menu">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <p>Home</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./shop.html">
+                            <p>Shop</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./blog.html">
+                            <p>Blogs</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./about.html">
+                            <p>About us</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">
+                            <p>Contact us</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
-        <div class="sliderSection">
-            <div class="container">
-                <div class="slider">
-                    <div class="slide">
-                        <i class="fa-solid fa-angles-left slideLeft"></i>
-                        <div class="slide-desc">
-                            <p>Fresh meat</p>
-                            <h3>Spices for <br> cooking</h3>
-                            <a href="./shop.html">Shop Now</a>
-                        </div>
-                        <div class="slide-img">
-                            <img src="./assets/images/sliderImg.webp" alt="sliderImg">
-                        </div>
-                        <i class="fa-solid fa-angles-right slideRight"></i>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./assets/images/sliderImg.webp" alt="sliderImg">
+                    <div class="slide-desc">
+                        <p>Fresh meat</p>
+                        <h3>Spices for <br> cooking</h3>
+                        <a href="./shop.html">Shop Now</a>
                     </div>
-                    <div class="slide">
-                        <div class="slide-desc">
-                            <p>Fresh meat</p>
-                            <h3>Spices for <br> cooking</h3>
-                            <a href="#">Shop Now</a>
-                        </div>
-                        <div class="slide-img">
-                            <img src="./assets/images/sliderImg.webp" alt="sliderImg">
-                        </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/sliderImg1.webp" alt="sliderImg">
+                    <div class="slide-desc">
+                        <p>Fresh & healthy</p>
+                        <h3>Vegetable <br> basket free</h3>
+                        <a href="./shop.html">Order Now</a>
                     </div>
-                    <div class="slide">
-                        <div class="slide-desc">
-                            <p>Fresh meat</p>
-                            <h3>Spices for <br> cooking</h3>
-                            <a href="#">Shop Now</a>
-                        </div>
-                        <div class="slide-img">
-                            <img src="./assets/images/sliderImg.webp" alt="sliderImg">
-                        </div>
-                    </div>
-                    <div class="slidePoint">
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./assets/images/sliderImg2.webp" alt="sliderImg">
+                    <div class="slide-desc">
+                        <p>100% Organic</p>
+                        <h3>Delicious <br> ingredients</h3>
+                        <a href="./shop.html">Shop Now</a>
                     </div>
                 </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <div class="bannerSection">
             <div class="container">
@@ -255,7 +278,7 @@
                                     alt="productHover">
                             </a>
                             <div class="productIcon">
-                                <i class="fa-regular fa-heart"></i>
+                                <i class="fa-regular fa-heart heart"></i>
                                 <a href="./basket.html">
                                     <i class="fa-solid fa-cart-shopping"></i>
                                 </a>
@@ -587,6 +610,8 @@
         </div>
     </footer>
 
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./js/app.js"></script>
 
