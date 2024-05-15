@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,7 +62,7 @@
                     </div>
                     <div class="header-element">
                         <ul>
-                            <Li>
+                            <Li class="menubarIcon">
                                 <i class="fa-solid fa-bars menubar"></i>
                             </Li>
                             <Li class="searchIcon">
@@ -73,7 +74,7 @@
                                 </a>
                             </Li>
                             <Li>
-                                <a href="./wishlist.html">
+                                <a href="./wishlist.html" class="wish">
                                     <i class="fa-regular fa-heart"></i>
                                     <span>0</span>
                                 </a>
@@ -113,23 +114,35 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="MenuSlider">
-                        <i class="fa-solid fa-chevron-left"></i>
-                        <ul>
-                            <Li>
+                    <div class="swiper mySwiper1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide menuslide">
                                 <img src="./assets/images/mini-img.webp" alt="mini-img">
                                 <p>Haldi powder</p>
-                            </Li>
-                            <!-- <Li>
+                            </div>
+                            <div class="swiper-slide menuslide">
                                 <img src="./assets/images/mini-img.webp" alt="mini-img">
                                 <p>Haldi powder</p>
-                            </Li>
-                            <Li>
+                            </div>
+                            <div class="swiper-slide menuslide">
                                 <img src="./assets/images/mini-img.webp" alt="mini-img">
                                 <p>Haldi powder</p>
-                            </Li> -->
-                        </ul>
-                        <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                            <div class="swiper-slide menuslide">
+                                <img src="./assets/images/mini-img.webp" alt="mini-img">
+                                <p>Haldi powder</p>
+                            </div>
+                            <div class="swiper-slide menuslide">
+                                <img src="./assets/images/mini-img.webp" alt="mini-img">
+                                <p>Haldi powder</p>
+                            </div>
+                            <div class="swiper-slide menuslide">
+                                <img src="./assets/images/mini-img.webp" alt="mini-img">
+                                <p>Haldi powder</p>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -137,7 +150,7 @@
         <div class="searchSection">
             <div class="container">
                 <div class="search">
-                    <button>
+                    <button id="close-search">
                         <i class="fa-solid fa-xmark"></i>
                     </button>
                     <div class="search-title">
@@ -344,7 +357,7 @@
         </div>
     </footer>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

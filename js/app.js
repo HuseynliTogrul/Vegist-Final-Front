@@ -13,11 +13,7 @@ const menuHeaderIcon = document.querySelector(".menu-header i")
 
 
 
-window.onkeydown = function (event) {
-  if (event.keyCode == 27) {
-    searchSection.style.display = "none";
-  }
-};
+// Category
 
 CategoryHeader.addEventListener("click", () => {
   categoryList.classList.toggle("DisplayNone");
@@ -35,6 +31,12 @@ closeSearch.addEventListener('click', () => {
   document.body.style.overflow = 'auto';
 })
 
+window.onkeydown = function (event) {
+  if (event.keyCode == 27) {
+    searchSection.style.display = "none";
+  }
+};
+
 // MenuBar
 
 menubarIcon.addEventListener("click", () => {
@@ -49,12 +51,30 @@ menuHeaderIcon.addEventListener("click", () => {
   menuMobile.style.display = "none";
 })
 
+
+//MenuSlider
+
+var swiper = new Swiper(".mySwiper1", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    prevEl: ".swiper-button-prev",
+    nextEl: ".swiper-button-next",
+  },
+});
+
+
 // Slider
 
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -62,5 +82,7 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
-  },
+  }
 });
+
+
