@@ -1,3 +1,5 @@
+"use strict";
+
 const categoryList = document.querySelector(".CategoryList");
 const CategoryHeader = document.querySelector(".CategoryHeader");
 
@@ -10,6 +12,13 @@ const productIcon = document.querySelector(".productIcon i")
 const menubarIcon = document.querySelector(".menubarIcon i")
 const menuMobile = document.querySelector(".menu-mobile")
 const menuHeaderIcon = document.querySelector(".menu-header i")
+
+
+const category = document.querySelectorAll('.category');
+const categories = document.querySelector('.categories');
+
+const leftBtn = document.querySelector(".leftBtn");
+const rightBtn = document.querySelector(".rightBtn");
 
 
 
@@ -44,11 +53,13 @@ menubarIcon.addEventListener("click", () => {
     menuMobile.style.display = "none";
   } else {
     menuMobile.style.display = "block";
+    document.body.style.overflow = 'hidden';
   }
 })
 
 menuHeaderIcon.addEventListener("click", () => {
   menuMobile.style.display = "none";
+  document.body.style.overflow = 'auto';
 })
 
 
@@ -86,3 +97,26 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
+// categorySlider
+
+let index = 0;
+
+rightBtn.addEventListener("click", () => {
+  if (index === category.length - 1) {
+    index = 0;
+  } else {
+    index++;
+  }
+
+  categories.style.transform = `translateX(-${index * 200}px)`;
+});
+
+leftBtn.addEventListener("click", () => {
+  if (index === 0) {
+    index = category.length - 1;
+  } else {
+    index--;
+  }
+
+  categories.style.transform = `translateX(-${index * 200}px)`;
+});

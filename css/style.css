@@ -398,10 +398,11 @@ header .line {
 
 .slide-desc {
     position: absolute;
-    top: 10%;
+    top: 30%;
     left: 0;
     margin-left: 15px;
     text-align: start;
+    z-index: 25;
 }
 
 .slide-desc p {
@@ -662,6 +663,10 @@ header .line {
 /* productSection end */
 /* categorySection start */
 
+.shopify-category{
+    overflow: hidden;
+}
+
 .shopify-category h2 {
     font-weight: 500;
     padding: 100px 0 30px;
@@ -669,8 +674,10 @@ header .line {
 }
 
 .categories {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    width: 2400px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
     gap: 20px;
 }
 
@@ -678,7 +685,7 @@ header .line {
     width: 100%;
 }
 
-.categories a p {
+.category-desc p{
     background-color: #f8f4f0;
     border-top: 1px solid rgb(0 0 0 / 5%);
     text-align: center;
@@ -687,6 +694,7 @@ header .line {
 }
 
 .category {
+    width: 190px;
     position: relative;
     transition: all 0.3s linear;
 }
