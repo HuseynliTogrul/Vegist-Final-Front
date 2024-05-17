@@ -6,6 +6,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 a {
     cursor: pointer;
     color: black;
@@ -15,6 +19,10 @@ a {
 button {
     cursor: pointer;
     background-color: transparent;
+}
+
+.hidden {
+    display: none;
 }
 
 .active {
@@ -38,6 +46,19 @@ button {
 .active {
     /* border: 1px solid #91b656; */
     /* color: red; */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(63, 63, 63, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 100;
 }
 
 .container {
@@ -296,7 +317,7 @@ header .line {
     display: none;
     padding: 0 15px;
     height: 100%;
-    z-index: 100;
+    z-index: 200;
     background-color: #fff;
     max-height: 100%;
     overflow-y: auto;
@@ -663,7 +684,7 @@ header .line {
 /* productSection end */
 /* categorySection start */
 
-.shopify-category{
+.shopify-category {
     overflow: hidden;
 }
 
@@ -685,7 +706,7 @@ header .line {
     width: 100%;
 }
 
-.category-desc p{
+.category-desc p {
     background-color: #f8f4f0;
     border-top: 1px solid rgb(0 0 0 / 5%);
     text-align: center;
@@ -782,9 +803,17 @@ header .line {
     text-align: center;
     border-radius: 50%;
     background-color: #91b656;
-    z-index: 1;
-    transition: all 0.3s linear;
+    z-index: 1000;
+    transition: all 0.5s ease;
     cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.scroll.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
 }
 
 .scroll:hover {
@@ -802,7 +831,6 @@ header .line {
     justify-content: space-between;
     padding: 10px 0;
     font-size: 15px;
-    cursor: pointer;
 }
 
 .listHeader h3 {
@@ -819,19 +847,19 @@ header .line {
     cursor: pointer;
 }
 
-.footerSubList ul {
-    display: flex;
-    flex-direction: column;
+.footerSubList {
+    /* display: flex;
+    flex-direction: column; */
     gap: 5px;
     font-size: 15px;
 }
 
-.footerSubList ul li a {
+.footerSubList li a {
     color: #666464;
     transition: all 0.3s linear;
 }
 
-.footerSubList ul li a:hover {
+.footerSubList li a:hover {
     color: #91b656;
 }
 

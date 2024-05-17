@@ -9,6 +9,8 @@ img.onmousemove = function (e) {
 const SDetailLi = document.querySelectorAll(".SDetailLi");
 const MDetailLi = document.querySelectorAll(".MDetailLi");
 
+const detailImgSlider = document.querySelectorAll(".detailImg-slider img");
+
 // Size product
 
 SDetailLi.forEach((size) => {
@@ -36,15 +38,15 @@ MDetailLi.forEach((size) => {
 });
 
 
-const detailImgSlider = document.querySelectorAll(".detailImg-slider img");
+// Detail img 
 
 detailImgSlider.forEach(imgSlider => {
   imgSlider.addEventListener("click", () => {
     detailImgSlider.forEach((resetimg) => {
-      resetimg.style.border = "1px solid none";
+      resetimg.style.border = "1px solid white";
     });
 
     imgSlider.style.border =
-      imgSlider.style.border === "1px solid none" ? "2px solid #91b656" : "1px solid none";
+      imgSlider.style.border === "1px solid white" ? "1px solid #91b656" : "1px solid white";
   })
 })

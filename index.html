@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/basket.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -17,6 +19,7 @@
 </head>
 
 <body id="body">
+    <div class="overlay hidden"></div>
     <header>
         <div class="header-area">
             <div class="container">
@@ -296,10 +299,8 @@
                             </a>
                             <div class="productIcon">
                                 <i class="fa-regular fa-heart heart"></i>
-                                <a href="./basket.html">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                                <a href="">
+                                <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                <a href="./product.html">
                                     <i class="fa-regular fa-eye"></i>
                                 </a>
                             </div>
@@ -341,10 +342,8 @@
                             </a>
                             <div class="productIcon">
                                 <i class="fa-regular fa-heart"></i>
-                                <a href="">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                                <a href="">
+                                <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                <a href="product.html">
                                     <i class="fa-regular fa-eye"></i>
                                 </a>
                             </div>
@@ -386,10 +385,8 @@
                             </a>
                             <div class="productIcon">
                                 <i class="fa-regular fa-heart"></i>
-                                <a href="">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                                <a href="">
+                                <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                <a href="product.html">
                                     <i class="fa-regular fa-eye"></i>
                                 </a>
                             </div>
@@ -431,10 +428,8 @@
                             </a>
                             <div class="productIcon">
                                 <i class="fa-regular fa-heart"></i>
-                                <a href="">
-                                    <i class="fa-solid fa-cart-shopping"></i>
-                                </a>
-                                <a href="">
+                                <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                <a href="product.html">
                                     <i class="fa-regular fa-eye"></i>
                                 </a>
                             </div>
@@ -463,6 +458,114 @@
                             <div class="productPrice">
                                 <div class="newPrice">€15.00</div>
                                 <div class="oldPrice">€20.00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="productSection hidden">
+                    <div class="overlay hidden"></div>
+                    <div class="product">
+                        <button id="close-search">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <div class="product-detail">
+                            <div class="detail-img">
+                                <div class="mainImg">
+                                    <i class="fa-solid fa-chevron-left mainImgIcon"></i>
+                                    <img src="./assets/images/product1.webp" alt="product1">
+                                    <i class="fa-solid fa-chevron-right mainImgIcon"></i>
+                                </div>
+                                <div class="detailImg-slider">
+                                    <img src="./assets/images/product1-Hover.webp" alt="">
+                                    <img src="./assets/images/product1.webp" alt="">
+                                    <img src="./assets/images/product2-Hover.webp" alt="">
+                                    <img src="./assets/images/product2.webp" alt="">
+                                </div>
+                            </div>
+                            <div class="detail-info">
+                                <h2>Blackberry 100%organic</h2>
+                                <div class="line"></div>
+                                <div class="rating">
+                                    <ul>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-solid fa-star"></i>
+                                        </li>
+                                        <li>
+                                            <i class="fa-regular fa-star"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="productPrice">
+                                    <div class="newPrice">€18.00</div>
+                                    <div class="oldPrice">€20.00</div>
+                                </div>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                </p>
+                                <div class="size-detail">
+                                    <h4>Size: <span>1kg</span> </h4>
+                                    <div class="sizeDetailList">
+                                        <ul>
+                                            <li class="SDetailLi">1kg</li>
+                                            <li class="SDetailLi">2kg</li>
+                                            <li class="SDetailLi">5kg</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="material-detail">
+                                    <h4>Material: <span>Canada</span> </h4>
+                                    <div class="materialDetailList">
+                                        <ul>
+                                            <li class="MDetailLi">Canada</li>
+                                            <li class="MDetailLi">India</li>
+                                            <li class="MDetailLi">Germany</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item-quantity">
+                                    <p>Quantity:</p>
+                                    <div class="quantity-count">
+                                        <button class="minusCount">-</button>
+                                        <input type="number" value="1" class="counter">
+                                        <button class="plusCount">+</button>
+                                    </div>
+                                </div>
+                                <div class="detail-btns">
+                                    <button>Add to cart</button>
+                                    <button>Buy it now</button>
+                                </div>
+                                <div class="detail-heart">
+                                    <i class="fa-regular fa-heart"></i>
+                                    <p>Wishlist</p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="detail-sku">
+                                    <h4>Sku: <span>123456</span></h4>
+                                </div>
+                                <div class="detail-share">
+                                    <h4>Share:</h4>
+                                    <ul>
+                                        <li><i class="fa-brands fa-facebook-f"></i></li>
+                                        <li><i class="fa-brands fa-twitter"></i></li>
+                                        <li><i class="fa-brands fa-pinterest"></i></li>
+                                    </ul>
+                                </div>
+                                <div class="detail-checkout">
+                                    <img src="./assets/icons/visa.svg" alt="">
+                                    <img src="./assets/icons/paypal.svg" alt="">
+                                    <img src="./assets/icons/mastercard.svg" alt="">
+                                    <img src="./assets/icons/express.svg" alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -519,8 +622,6 @@
             </div>
         </div>
         <div class="line"></div>
-
-
         <div class="serviceArea">
             <div class="container">
                 <div class="service">
@@ -574,8 +675,8 @@
                                 <!-- <i class="fa-solid fa-minus"></i> -->
                                 <i class="fa-solid fa-plus"></i>
                             </div>
-                            <div class="footerSubList">
-                                <ul>
+                            <div>
+                                <ul class="footerSubList">
                                     <li>
                                         <a href="./about.html">About vegist</a>
                                     </li>
@@ -653,6 +754,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="./js/app.js"></script>
+    <script src="./js/shop.js"></script>
 
 </body>
 

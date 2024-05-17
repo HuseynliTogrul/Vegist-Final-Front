@@ -307,7 +307,8 @@
     .product-detail {
         display: flex;
         gap: 30px;
-        width: 75%;
+        /* width: 75%; */
+        width: 100%;
     }
 
     .detail-img {
