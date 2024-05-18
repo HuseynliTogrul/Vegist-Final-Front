@@ -1,5 +1,5 @@
 const shopBasket = document.querySelectorAll(".shopBasket")
-const productSection = document.querySelector(".productSection")
+const productModal = document.querySelector(".productModal")
 
 const overlay = document.querySelector(".overlay");
 const closeModalBtn = document.querySelector("#close-search i");
@@ -11,17 +11,16 @@ const closeIcon = document.querySelector(".closeIcon i");
 
 
 const openModal = function () {
-    productSection.classList.remove("hidden");
+    productModal.classList.remove("hidden");
     overlay.classList.remove("hidden");
 };
 
 shopBasket.forEach((basket) => {
     basket.addEventListener("click", openModal);
-
 })
 
 const closeModal = function () {
-    productSection.classList.add("hidden");
+    productModal.classList.add("hidden");
     overlay.classList.add("hidden");
 };
 
