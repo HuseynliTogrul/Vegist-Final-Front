@@ -146,6 +146,7 @@ header .line {
 /* Category start */
 
 .CategoryHeader {
+    width: max-content;
     padding: 10px 15px;
     display: flex;
     align-items: center;
@@ -231,6 +232,10 @@ header .line {
 .swiper-slide img {
     display: block;
     object-fit: cover;
+}
+
+.sliderSection .swiper-slide img{
+    width: 100%;
 }
 
 /* Swiper end */
@@ -419,7 +424,7 @@ header .line {
 
 .slide-desc {
     position: absolute;
-    top: 30%;
+    top: 0;
     left: 0;
     margin-left: 15px;
     text-align: start;
