@@ -165,7 +165,6 @@ listHeader.forEach((list) => {
 });
 
 
-
 // Products filter
 
 // const productsEl = document.querySelector(".products");
