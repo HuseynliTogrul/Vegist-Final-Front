@@ -48,6 +48,11 @@ button {
     /* color: red; */
 }
 
+
+.hidden-menu{
+    display: none;
+}
+
 .overlay {
     position: fixed;
     top: 0;
@@ -872,14 +877,36 @@ header .line {
 }
 
 .footerSubList {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
     margin-top: 10px;
     cursor: pointer;
+    transition: all 500ms ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.show-menu{
+    max-height: 500px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.fa-minus{
+    display: none !important;
+}
+
+.show-menu .fa-minus{
+    display: block !important;
+}
+
+.show-menu .fa-plus {
+    display: none !important;
 }
 
 .footerSubList {
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    flex-direction: column;
     gap: 5px;
     font-size: 15px;
 }
@@ -894,7 +921,7 @@ header .line {
 }
 
 .footer-main {
-    padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .footer-main .logo {
@@ -1114,14 +1141,21 @@ header .line {
         display: flex;
     }
 
+    .footerList{
+        margin-top: 40px;
+    }
+
     .footerSubList {
         display: block;
+        overflow: visible;
+        visibility: visible;
+        opacity: 1;
     }
 
     .footerList {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        /* align-items: center; */
         width: 100%;
     }
 
@@ -1137,9 +1171,9 @@ header .line {
         border: none;
     }
 
-    .listHeader i {
+    /* .listHeader i {
         display: none;
-    }
+    } */
 
     .mail {
         width: max-content;
@@ -1225,7 +1259,7 @@ header .line {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .products {
+    .productSection .products {
         grid-template-columns: repeat(5, 1fr);
     }
 
@@ -1276,13 +1310,17 @@ header .line {
 
     .footerSubList {
         display: block;
+        overflow: visible;
+        visibility: visible;
+        opacity: 1;
     }
 
     .footerList {
         display: flex;
         justify-content: space-around;
-        align-items: center;
+        /* align-items: center; */
         width: 100%;
+        margin-top: 40px;
     }
 
     .footer-main .logo {
@@ -1293,9 +1331,9 @@ header .line {
         border: none;
     }
 
-    .listHeader i {
+    /* .listHeader i {
         display: none;
-    }
+    } */
 
     .mail {
         width: max-content;

@@ -20,7 +20,10 @@ const leftBtn = document.querySelector(".leftBtn");
 const rightBtn = document.querySelector(".rightBtn");
 
 const footerSubList = document.querySelectorAll(".footerSubList")
-const listHeader = document.querySelectorAll(".listHeader")
+const listHeader = document.querySelectorAll(".listHeader");
+
+const minus = document.querySelectorAll(".minus");
+const plus = document.querySelectorAll(".plus");
 
 const scroll = document.querySelector(".scroll")
 
@@ -152,17 +155,17 @@ leftBtn.addEventListener("click", () => {
 
 // Footer
 
-listHeader.forEach((list) => {
-  list.addEventListener("click", () => {
-    if (footerSubList.style.display === "none") {
-      footerSubList.style.display = "block"
-      console.log("1");
-    } else {
-      footerSubList.style.display = "none"
-      console.log("2");
-    }
+listHeader.forEach(header => {
+  header.addEventListener('click', () => {
+    const footerSublist = header.nextElementSibling;
+    footerSublist.classList.toggle("show-menu");
+
+    minus.classList.toggle("show-menu")
+    plus.classList.toggle("hidden")
   });
 });
+
+
 
 
 // Products filter
