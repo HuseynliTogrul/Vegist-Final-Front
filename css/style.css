@@ -6,7 +6,7 @@
     font-family: "Poppins", sans-serif;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -43,13 +43,7 @@ button {
     display: block;
 }
 
-.active {
-    /* border: 1px solid #91b656; */
-    /* color: red; */
-}
-
-
-.hidden-menu{
+.hidden-menu {
     display: none;
 }
 
@@ -89,7 +83,6 @@ header {
     background-color: white;
     border: 1px solid rgb(0 0 0 / 5%);
     box-shadow: 0 0 15px rgb(0 0 0 / 15%);
-    /* animation: smoothScroll 1s forwards; */
 }
 
 header .line {
@@ -207,6 +200,7 @@ header .line {
     align-items: center;
 }
 
+
 .header-wrap .swiper {
     margin: 0;
 }
@@ -238,7 +232,7 @@ header .line {
     object-fit: cover;
 }
 
-.sliderSection .swiper-slide img{
+.sliderSection .swiper-slide img {
     width: 100%;
 }
 
@@ -256,7 +250,6 @@ header .line {
 }
 
 .search {
-    /* position: relative; */
     padding: 50px 0;
 }
 
@@ -322,7 +315,6 @@ header .line {
     position: fixed;
     top: 0;
     width: 300px;
-    /* left: -300px; */
     display: none;
     padding: 0 15px;
     height: 100%;
@@ -468,8 +460,6 @@ header .line {
 /* BannerSection start */
 
 .banner-wrap {
-    /* display: flex;
-    flex-direction: column; */
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
@@ -552,7 +542,6 @@ header .line {
 }
 
 .productList {
-    /* width: fit-content; */
     margin-bottom: 25px;
 }
 
@@ -560,7 +549,6 @@ header .line {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: max-content; */
     gap: 15px;
     text-transform: uppercase;
     border-bottom: 1px solid rgb(0 0 0 / 22%);
@@ -719,25 +707,41 @@ header .line {
 /* productSection end */
 /* categorySection start */
 
+.categorySection {
+    margin: 80px 0;
+}
+
 .shopify-category {
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .shopify-category h2 {
     font-weight: 500;
-    padding: 100px 0 30px;
-    text-align: center;
 }
 
-.categories {
+.mySwiper2 .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
-    width: 2400px;
-    /* display: grid;
-    grid-template-columns: repeat(2, 1fr); */
-    gap: 20px;
+    flex-direction: column;
+    gap: 0;
+}
+
+.mySwiper2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .category a img {
+    width: 100%;
+}
+
+.category-desc {
     width: 100%;
 }
 
@@ -755,15 +759,12 @@ header .line {
     transition: all 0.3s linear;
 }
 
-.category:hover .categorySpan {
+.mySwiper2 .swiper-slide:hover .categorySpan {
     display: block;
 }
 
-.category:hover .categoryDesc {
-    display: none;
-}
-
 .categorySpan {
+    display: none;
     background: #91b656;
     position: absolute;
     bottom: 0;
@@ -780,12 +781,14 @@ header .line {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-bottom: 50px;
 }
 
 .sliderIcon i {
+    display: flex;
+}
+
+.leftBtn,
+.rightBtn {
     color: #91b656;
     height: 40px;
     font-size: 15px;
@@ -799,7 +802,8 @@ header .line {
     cursor: pointer;
 }
 
-.sliderIcon i:hover {
+.leftBtn:hover,
+.rightBtn:hover {
     color: white;
     border: 1px solid white;
     background-color: #91b656;
@@ -886,21 +890,13 @@ header .line {
     opacity: 0;
 }
 
-.show-menu{
+.show-menu {
     max-height: 500px;
     visibility: visible;
     opacity: 1;
 }
 
-.fa-minus{
-    display: none !important;
-}
-
-.show-menu .fa-minus{
-    display: block !important;
-}
-
-.show-menu .fa-plus {
+.fa-minus {
     display: none !important;
 }
 
@@ -1000,13 +996,6 @@ header .line {
     .slide-button i {
         display: block;
     }
-
-    .swiper-button-prev,
-    .swiper-button-next {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -1025,12 +1014,6 @@ header .line {
 
     .categories {
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .sliderIcon {
-        position: absolute;
-        top: 78px;
-        right: 0px;
     }
 
     .shopify-category {
@@ -1087,6 +1070,11 @@ header .line {
         font-size: 20px;
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: flex;
+    }
+
     .slide-desc h3 {
         font-size: 35px;
         padding: 10px 0 25px;
@@ -1115,12 +1103,6 @@ header .line {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .sliderIcon {
-        position: absolute;
-        top: 78px;
-        right: 0px;
-    }
-
     .shopify-category {
         position: relative;
     }
@@ -1141,7 +1123,7 @@ header .line {
         display: flex;
     }
 
-    .footerList{
+    .footerList {
         margin-top: 40px;
     }
 
@@ -1155,7 +1137,6 @@ header .line {
     .footerList {
         display: flex;
         justify-content: space-around;
-        /* align-items: center; */
         width: 100%;
     }
 
@@ -1167,13 +1148,13 @@ header .line {
         margin: 30px 0 5px;
     }
 
+    .fa-plus::before {
+        display: none;
+    }
+
     .listHeader {
         border: none;
     }
-
-    /* .listHeader i {
-        display: none;
-    } */
 
     .mail {
         width: max-content;
@@ -1238,6 +1219,11 @@ header .line {
         font-size: 20px;
     }
 
+    .swiper-button-prev,
+    .swiper-button-next {
+        display: flex;
+    }
+
     .categoryMenu {
         display: block;
     }
@@ -1276,12 +1262,6 @@ header .line {
         font-size: 18px;
     }
 
-    .sliderIcon {
-        position: absolute;
-        top: 78px;
-        right: 0px;
-    }
-
     .shopify-category {
         position: relative;
     }
@@ -1318,7 +1298,6 @@ header .line {
     .footerList {
         display: flex;
         justify-content: space-around;
-        /* align-items: center; */
         width: 100%;
         margin-top: 40px;
     }
@@ -1327,13 +1306,13 @@ header .line {
         margin: 30px 0 5px;
     }
 
+    .fa-plus::before {
+        display: none;
+    }
+
     .listHeader {
         border: none;
     }
-
-    /* .listHeader i {
-        display: none;
-    } */
 
     .mail {
         width: max-content;

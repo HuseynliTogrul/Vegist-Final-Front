@@ -22,8 +22,8 @@ const rightBtn = document.querySelector(".rightBtn");
 const footerSubList = document.querySelectorAll(".footerSubList")
 const listHeader = document.querySelectorAll(".listHeader");
 
-const minus = document.querySelectorAll(".minus");
-const plus = document.querySelectorAll(".plus");
+const minus = document.querySelectorAll(".fa-minus");
+const plus = document.querySelectorAll(".fa-plus");
 
 const scroll = document.querySelector(".scroll")
 
@@ -128,28 +128,34 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 
-// categorySlider
+// CategorySlider
 
-let index = 0;
-
-rightBtn.addEventListener("click", () => {
-  if (index === category.length - 1) {
-    index = 0;
-  } else {
-    index++;
-  }
-
-  categories.style.transform = `translateX(-${index * 200}px)`;
-});
-
-leftBtn.addEventListener("click", () => {
-  if (index === 0) {
-    index = category.length - 1;
-  } else {
-    index--;
-  }
-
-  categories.style.transform = `translateX(-${index * 200}px)`;
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: ".rightBtn",
+    prevEl: ".leftBtn",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+  },
 });
 
 
@@ -160,12 +166,15 @@ listHeader.forEach(header => {
     const footerSublist = header.nextElementSibling;
     footerSublist.classList.toggle("show-menu");
 
-    minus.classList.toggle("show-menu")
-    plus.classList.toggle("hidden")
+    if (footerSubList.classList.contains('show-menu')) {
+      plus.style.display = 'none';
+      minus.style.display = 'inline';
+    } else {
+      plus.style.display = 'inline';
+      minus.style.display = 'none';
+    }
   });
 });
-
-
 
 
 // Products filter
