@@ -97,12 +97,22 @@ document.addEventListener('keydown', function (event) {
 //MenuSlider
 
 var swiper = new Swiper(".mySwiper1", {
-  slidesPerView: 3,
+  slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
   navigation: {
     prevEl: ".swiper-button-prev",
     nextEl: ".swiper-button-next",
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 50,
+    },
   },
 });
 
@@ -131,8 +141,8 @@ var swiper = new Swiper(".mySwiper", {
 // CategorySlider
 
 var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 1,
-  spaceBetween: 10,
+  slidesPerView: 2,
+  spaceBetween: 20,
   loop: true,
   autoplay: {
     delay: 5000,
@@ -143,17 +153,13 @@ var swiper = new Swiper(".mySwiper2", {
     prevEl: ".leftBtn",
   },
   breakpoints: {
-    640: {
-      slidesPerView: 2,
-      spaceBetween: 20,
-    },
     768: {
       slidesPerView: 4,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
     1024: {
       slidesPerView: 5,
-      spaceBetween: 50,
+      spaceBetween: 30,
     },
   },
 });

@@ -241,6 +241,10 @@ button {
     .shop-left {
         width: 65%;
     }
+
+    .shop-right .productIcon {
+        left: 20px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 1000px) {
@@ -265,6 +269,7 @@ button {
         width: 35%;
         position: inherit;
         z-index: 0;
+        padding-left: 0;
     }
 
     .shop-right {
@@ -283,6 +288,10 @@ button {
     .closeIcon{
         display: none;
     }
+
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 2000px) {
@@ -291,10 +300,11 @@ button {
         position: inherit;
         z-index: 0;
         width: 35%;
+        padding-left: 0;
     }
 
     .shop-right {
-        width: 75%;
+        width: 80%;
     }
 
     .shopFilter {
