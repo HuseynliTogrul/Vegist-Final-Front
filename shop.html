@@ -19,6 +19,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header>
         <div class="header-area">
             <div class="container">
@@ -72,8 +73,15 @@
                             </Li>
                             <Li>
                                 <a href="./login.html">
-                                    <i class="fa-regular fa-user"></i>
+                                    <i class="fa-regular fa-user UserLogin"></i>
                                 </a>
+                                <!-- <i class="fa-regular fa-user UserLogin"></i>
+                                <a href="./login.html">
+                                    <p class="MyLogin">Login</p>
+                                </a>
+                                <a href="">
+                                    <p class="AdminLogin">Go to Admin</p>
+                                </a> -->
                             </Li>
                             <Li>
                                 <a href="./wishlist.html" class="wish">
@@ -143,8 +151,8 @@
                                 <p>Haldi powder</p>
                             </div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
                     </div>
                 </div>
             </div>
@@ -229,7 +237,7 @@
                                 <ul>
                                     <Li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
+                                            <input type="checkbox" name="category">
                                             <span>Cow milk</span>
                                         </div>
                                         <p>(20)</p>
@@ -342,7 +350,9 @@
 
                                     <div class="productIcon">
                                         <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                        <a href="./basket.html">
+                                            <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                        </a>
                                         <a href="product.html">
                                             <i class="fa-regular fa-eye"></i>
                                         </a>
@@ -385,7 +395,9 @@
                                     </a>
                                     <div class="productIcon">
                                         <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                        <a href="./basket.html">
+                                            <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                        </a>
                                         <a href="product.html">
                                             <i class="fa-regular fa-eye"></i>
                                         </a>
@@ -428,7 +440,9 @@
                                     </a>
                                     <div class="productIcon">
                                         <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                        <a href="./basket.html">
+                                            <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                        </a>
                                         <a href="product.html">
                                             <i class="fa-regular fa-eye"></i>
                                         </a>
@@ -471,7 +485,9 @@
                                     </a>
                                     <div class="productIcon">
                                         <i class="fa-regular fa-heart"></i>
-                                        <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                        <a href="./basket.html">
+                                            <i class="fa-solid fa-cart-shopping shopBasket"></i>
+                                        </a>
                                         <a href="product.html">
                                             <i class="fa-regular fa-eye"></i>
                                         </a>
@@ -724,10 +740,10 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
     <script src="./js/shop.js"></script>
     <script src="./js/product.js"></script>
     <script src="./js/basket.js"></script>
-    <script src="./js/app.js"></script>
 </body>
 
 </html>

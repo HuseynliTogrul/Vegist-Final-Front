@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    <div class="overlay"></div>
     <header>
         <div class="header-area">
             <div class="container">
@@ -71,8 +72,15 @@
                             </Li>
                             <Li>
                                 <a href="./login.html">
-                                    <i class="fa-regular fa-user"></i>
+                                    <i class="fa-regular fa-user UserLogin"></i>
                                 </a>
+                                <!-- <i class="fa-regular fa-user UserLogin"></i>
+                                <a href="./login.html">
+                                    <p class="MyLogin">Login</p>
+                                </a>
+                                <a href="">
+                                    <p class="AdminLogin">Go to Admin</p>
+                                </a> -->
                             </Li>
                             <Li>
                                 <a href="./wishlist.html" class="wish">
@@ -142,8 +150,8 @@
                                 <p>Haldi powder</p>
                             </div>
                         </div>
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div> -->
                     </div>
                 </div>
             </div>
@@ -222,15 +230,15 @@
                         <div class="product-detail">
                             <div class="detail-img">
                                 <div class="mainImg">
-                                    <i class="fa-solid fa-chevron-left mainImgIcon"></i>
-                                    <img src="./assets/images/product1.webp" alt="product1">
-                                    <i class="fa-solid fa-chevron-right mainImgIcon"></i>
+                                    <i class="fa-solid fa-chevron-left mainImgIcon previous"></i>
+                                    <img src="./assets/images/product1.webp" alt="product1" class="mainImage">
+                                    <i class="fa-solid fa-chevron-right mainImgIcon next"></i>
                                 </div>
                                 <div class="detailImg-slider">
-                                    <img src="./assets/images/product1-Hover.webp" alt="">
-                                    <img src="./assets/images/product1.webp" alt="">
-                                    <img src="./assets/images/product2-Hover.webp" alt="">
-                                    <img src="./assets/images/product2.webp" alt="">
+                                    <img src="./assets/images/product1.webp" alt="" class="slideImage active">
+                                    <img src="./assets/images/product2.webp" alt="" class="slideImage">
+                                    <img src="./assets/images/product3.webp" alt="" class="slideImage">
+                                    <img src="./assets/images/product4.webp" alt="" class="slideImage">
                                 </div>
                             </div>
                             <div class="detail-info">
@@ -292,7 +300,9 @@
                                     </div>
                                 </div>
                                 <div class="detail-btns">
-                                    <button>Add to cart</button>
+                                    <button>
+                                        <a href="./basket.html">Add to cart</a>
+                                    </button>
                                     <button>Buy it now</button>
                                 </div>
                                 <div class="detail-heart">
@@ -306,9 +316,15 @@
                                 <div class="detail-share">
                                     <h4>Share:</h4>
                                     <ul>
-                                        <li><i class="fa-brands fa-facebook-f"></i></li>
-                                        <li><i class="fa-brands fa-twitter"></i></li>
-                                        <li><i class="fa-brands fa-pinterest"></i></li>
+                                        <li>
+                                            <a href="https://facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://x.com/"><i class="fa-brands fa-twitter"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                                        </li>
                                     </ul>
                                 </div>
                                 <div class="detail-checkout">
