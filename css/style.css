@@ -150,23 +150,6 @@ header .line {
     border-radius: 5px;
 }
 
-.loginHeader:hover .loginHeaderA{
-    display: block;
-}
-
-/* .MyLogin,
-.AdminLogin {
-    display: none;
-}
-
-.UserLogin:hover .MyLogin {
-    display: block;
-}
-
-.UserLogin:hover .AdminLogin {
-    display: block;
-} */
-
 .header-element ul li span {
     position: absolute;
     top: -8px;

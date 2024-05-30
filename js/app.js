@@ -1,5 +1,8 @@
 "use strict";
 
+const loginHeader = document.querySelector(".loginHeader");
+const loginHeaderA = document.querySelector(".loginHeaderA");
+
 const categoryList = document.querySelector(".CategoryList");
 const CategoryHeader = document.querySelector(".CategoryHeader");
 
@@ -115,10 +118,6 @@ var swiper = new Swiper(".mySwiper1", {
     delay: 10000,
     disableOnInteraction: false
   },
-  navigation: {
-    prevEl: ".swiper-button-prev",
-    nextEl: ".swiper-button-next",
-  },
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -178,6 +177,17 @@ var swiper = new Swiper(".mySwiper2", {
     },
   },
 });
+
+
+//userLogin
+
+loginHeader.addEventListener("click", () => {
+  if(loginHeaderA.style.display === "block"){
+    loginHeaderA.style.display = "none"
+  }else{
+    loginHeaderA.style.display = "block"
+  }
+})
 
 
 // Footer
