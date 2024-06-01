@@ -182,9 +182,9 @@ var swiper = new Swiper(".mySwiper2", {
 //userLogin
 
 loginHeader.addEventListener("click", () => {
-  if(loginHeaderA.style.display === "block"){
+  if (loginHeaderA.style.display === "block") {
     loginHeaderA.style.display = "none"
-  }else{
+  } else {
     loginHeaderA.style.display = "block"
   }
 })
