@@ -18,31 +18,35 @@ const detailImg = document.querySelector(".detail-img")
 const previousBtn = document.querySelector(".previous")
 const nextBtn = document.querySelector(".next")
 
+const sizeSpan = document.querySelector(".sizeSpan")
+const materialSpan = document.querySelector(".materialSpan")
+
 
 
 // Size product
 
 SDetailLi.forEach((size) => {
   size.addEventListener("click", () => {
-    SDetailLi.forEach((resetsize) => {
-      resetsize.style.border = "1px solid white";
+    SDetailLi.forEach((resetS) => {
+      resetS.style.border = "1px solid white";
     });
 
-    size.style.border =
-      size.style.border === "1px solid white" ? "2px solid #91b656" : "1px solid white";
+    sizeSpan.textContent = size.textContent;
+    size.style.border = "2px solid #91b656";
   });
 });
 
+
 // Material product
 
-MDetailLi.forEach((size) => {
-  size.addEventListener("click", () => {
-    MDetailLi.forEach((resetsize) => {
-      resetsize.style.border = "1px solid white";
+MDetailLi.forEach((material) => {
+  material.addEventListener("click", () => {
+    MDetailLi.forEach((resetM) => {
+      resetM.style.border = "1px solid white";
     });
 
-    size.style.border =
-      size.style.border === "1px solid white" ? "2px solid #91b656" : "1px solid white";
+    materialSpan.textContent = material.textContent;
+      material.style.border = "2px solid #91b656";
   });
 });
 
