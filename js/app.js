@@ -142,18 +142,53 @@ document.addEventListener('DOMContentLoaded', (event) => {
   let wishlistCount = 0;
 
   heartIcons.forEach(heartIcon => {
-      heartIcon.addEventListener('click', function() {
-          if (heartIcon.classList.contains('fa-regular')) {
-              heartIcon.classList.remove('fa-regular');
-              heartIcon.classList.add('fa-solid', 'filled');
-              wishlistCount++;
-          } else {
-              heartIcon.classList.remove('fa-solid', 'filled');
-              heartIcon.classList.add('fa-regular');
-              wishlistCount--;
-          }
-          wishlistCountSpan.textContent = wishlistCount;
-      });
+    heartIcon.addEventListener('click', function () {
+      if (heartIcon.classList.contains('fa-regular')) {
+        heartIcon.classList.remove('fa-regular');
+        heartIcon.classList.add('fa-solid', 'filled');
+        wishlistCount++;
+      } else {
+        heartIcon.classList.remove('fa-solid', 'filled');
+        heartIcon.classList.add('fa-regular');
+        wishlistCount--;
+      }
+      wishlistCountSpan.textContent = wishlistCount;
+    });
+  });
+});
+
+
+// Product basket
+
+document.addEventListener("DOMContentLoaded", () => {
+  const shopBasketIcon = document.querySelectorAll(".shopBasket");
+  const productModal = document.querySelector(".productModal");
+  const overlay = document.querySelector(".overlay");
+  const closeModalButton = document.querySelector(".closeIcon");
+
+  const addToCartButton = document.getElementById("addToCart");
+  const basketCountElement = document.getElementById("basketCount");
+
+  const closeModal = () => {
+    productModal.classList.add("hidden");
+    overlay.classList.add("hidden");
+    document.body.style.overflow = 'auto';
+  };
+
+  shopBasketIcon.forEach(basket => {
+    basket.addEventListener("click", () => {
+      productModal.classList.remove("hidden");
+      overlay.classList.remove("hidden");
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  overlay.addEventListener("click", closeModal);
+  closeModalButton.addEventListener("click", closeModal);
+
+  addToCartButton.addEventListener("click", () => {
+    let currentCount = parseInt(basketCountElement.textContent);
+    basketCountElement.textContent = currentCount + 1;
   });
 });
 
