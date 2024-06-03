@@ -158,6 +158,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 
+
 // Product basket
 
 document.addEventListener("DOMContentLoaded", () => {
