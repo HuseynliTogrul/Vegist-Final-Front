@@ -234,59 +234,55 @@
                             <h3>Categories</h3>
                             <div class="categoryFilterList">
                                 <ul>
-                                    <Li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category">
+                                            <input type="checkbox" name="category" value="Cow milk">
                                             <span>Cow milk</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
-                                    <Li>
+                                    </li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
-                                            <span>Dairy & chesse</span>
+                                            <input type="checkbox" name="category" value="Dairy & cheese">
+                                            <span>Dairy & cheese</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
-                                    <Li>
+                                    </li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
+                                            <input type="checkbox" name="category" value="Fresh fruits">
                                             <span>Fresh fruits</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
+                                    </li>
                                 </ul>
                             </div>
-                        </div>
-                        <div class="shopFilterCount">
-                            <h3>Filter</h3>
-                            <p>20 products</p>
                         </div>
                         <div class="sizeFilter">
                             <h3>Size</h3>
                             <div class="sizeFilterList">
                                 <ul>
-                                    <Li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
-                                            <span>1kq</span>
+                                            <input type="checkbox" name="size" value="1kg">
+                                            <span>1kg</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
-                                    <Li>
+                                    </li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
-                                            <span>2kq</span>
+                                            <input type="checkbox" name="size" value="2kg">
+                                            <span>2kg</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
-                                    <Li>
+                                    </li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
-                                            <span>3kq</span>
+                                            <input type="checkbox" name="size" value="3kg">
+                                            <span>3kg</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -294,88 +290,78 @@
                             <h3>Material</h3>
                             <div class="materialFilterList">
                                 <ul>
-                                    <Li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
+                                            <input type="checkbox" name="material" value="Canada">
                                             <span>Canada</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
-                                    <Li>
+                                    </li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
+                                            <input type="checkbox" name="material" value="German">
                                             <span>German</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
-                                    <Li>
+                                    </li>
+                                    <li>
                                         <div class="checkBoxFilter">
-                                            <input type="checkbox" name="category" id="">
+                                            <input type="checkbox" name="material" value="Germany">
                                             <span>Germany</span>
                                         </div>
                                         <p>(20)</p>
-                                    </Li>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="shop-right">
                         <h3>Organic dryfruit (20)</h3>
-                        <img src="./assets/images/shopImg.webp" alt="shopImg">
+                        <img src="./assets/images/shopImg.webp" alt="Shop Image">
+
                         <div class="shopSortFilter">
                             <div class="shopFilter">
                                 <i class="fa-solid fa-filter"></i>
                                 <p>Filter</p>
                             </div>
                             <div class="sortFilter">
-                                <label for="filter">Sort by:</label>
-                                <select name="cars" id="cars">
+                                <label for="sort">Sort by:</label>
+                                <select id="sort">
                                     <option value="featured">Featured</option>
                                     <option value="selling">Best selling</option>
                                     <option value="AZ">Alphabetically, A-Z</option>
                                     <option value="ZA">Alphabetically, Z-A</option>
+                                    <option value="priceLowHigh">Price, low to high</option>
+                                    <option value="priceHighLow">Price, high to low</option>
                                 </select>
                             </div>
                         </div>
+
                         <div class="products">
-                            <div class="productItem">
+                            <div class="productItem" data-name="Blackberry 100% organic" data-price="18"
+                                data-category="Fresh fruits" data-size="1kg" data-material="Canada">
                                 <div class="productImg">
                                     <span>10%</span>
                                     <a href="./product.html">
-                                        <img src="./assets/images/product1.webp" alt="product1">
+                                        <img src="./assets/images/product1.webp" alt="Product 1">
                                         <img src="./assets/images/product1-Hover.webp" class="hover DisplayNone"
-                                            alt="productHover">
+                                            alt="Product 1 Hover">
                                     </a>
-
                                     <div class="productIcon">
                                         <i class="fa-regular fa-heart"></i>
-                                        <a href="./basket.html">
-                                            <i class="fa-solid fa-cart-shopping shopBasket"></i>
-                                        </a>
-                                        <a href="product.html">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </a>
+                                        <a href="./basket.html"><i class="fa-solid fa-cart-shopping shopBasket"></i></a>
+                                        <a href="./product.html"><i class="fa-regular fa-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="productDesc">
-                                    <p>Blackberry 100%organic</p>
+                                    <p>Blackberry 100% organic</p>
                                     <div class="rating">
                                         <ul>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
                                         </ul>
                                     </div>
                                     <div class="productPrice">
@@ -384,43 +370,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="productItem">
+
+                            <div class="productItem" data-name="Fresh banana 100% safe" data-price="15"
+                                data-category="Fresh fruits" data-size="2kg" data-material="German">
                                 <div class="productImg">
                                     <span>25%</span>
                                     <a href="./product.html">
-                                        <img src="./assets/images/product2.webp" alt="product">
+                                        <img src="./assets/images/product2.webp" alt="Product 2">
                                         <img src="./assets/images/product2-Hover.webp" class="hover DisplayNone"
-                                            alt="productHover">
+                                            alt="Product 2 Hover">
                                     </a>
                                     <div class="productIcon">
                                         <i class="fa-regular fa-heart"></i>
-                                        <a href="./basket.html">
-                                            <i class="fa-solid fa-cart-shopping shopBasket"></i>
-                                        </a>
-                                        <a href="product.html">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </a>
+                                        <a href="./basket.html"><i class="fa-solid fa-cart-shopping shopBasket"></i></a>
+                                        <a href="./product.html"><i class="fa-regular fa-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="productDesc">
                                     <p>Fresh banana 100% safe</p>
                                     <div class="rating">
                                         <ul>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
                                         </ul>
                                     </div>
                                     <div class="productPrice">
@@ -429,43 +403,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="productItem">
+
+                            <div class="productItem" data-name="Blackberry 100% organic" data-price="18"
+                                data-category="Fresh fruits" data-size="1kg" data-material="Canada">
                                 <div class="productImg">
                                     <span>10%</span>
                                     <a href="./product.html">
-                                        <img src="./assets/images/product1.webp" alt="product">
+                                        <img src="./assets/images/product1.webp" alt="Product 1">
                                         <img src="./assets/images/product1-Hover.webp" class="hover DisplayNone"
-                                            alt="productHover">
+                                            alt="Product 1 Hover">
                                     </a>
                                     <div class="productIcon">
                                         <i class="fa-regular fa-heart"></i>
-                                        <a href="./basket.html">
-                                            <i class="fa-solid fa-cart-shopping shopBasket"></i>
-                                        </a>
-                                        <a href="product.html">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </a>
+                                        <a href="./basket.html"><i class="fa-solid fa-cart-shopping shopBasket"></i></a>
+                                        <a href="./product.html"><i class="fa-regular fa-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="productDesc">
-                                    <p>Blackberry 100%organic</p>
+                                    <p>Blackberry 100% organic</p>
                                     <div class="rating">
                                         <ul>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
                                         </ul>
                                     </div>
                                     <div class="productPrice">
@@ -474,43 +436,31 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="productItem">
+
+                            <div class="productItem" data-name="Fresh banana 100% safe" data-price="15"
+                                data-category="Fresh fruits" data-size="2kg" data-material="German">
                                 <div class="productImg">
                                     <span>25%</span>
                                     <a href="./product.html">
-                                        <img src="./assets/images/product2.webp" alt="product">
+                                        <img src="./assets/images/product2.webp" alt="Product 2">
                                         <img src="./assets/images/product2-Hover.webp" class="hover DisplayNone"
-                                            alt="productHover">
+                                            alt="Product 2 Hover">
                                     </a>
                                     <div class="productIcon">
                                         <i class="fa-regular fa-heart"></i>
-                                        <a href="./basket.html">
-                                            <i class="fa-solid fa-cart-shopping shopBasket"></i>
-                                        </a>
-                                        <a href="product.html">
-                                            <i class="fa-regular fa-eye"></i>
-                                        </a>
+                                        <a href="./basket.html"><i class="fa-solid fa-cart-shopping shopBasket"></i></a>
+                                        <a href="./product.html"><i class="fa-regular fa-eye"></i></a>
                                     </div>
                                 </div>
                                 <div class="productDesc">
                                     <p>Fresh banana 100% safe</p>
                                     <div class="rating">
                                         <ul>
-                                            <li>
-                                                <i class="fa-solid fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
-                                            <li>
-                                                <i class="fa-regular fa-star"></i>
-                                            </li>
+                                            <li><i class="fa-solid fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
+                                            <li><i class="fa-regular fa-star"></i></li>
                                         </ul>
                                     </div>
                                     <div class="productPrice">
@@ -522,7 +472,9 @@
                         </div>
                     </div>
                 </div>
+
             </div>
+        </div>
         </div>
 
         <div class="productModal hidden">

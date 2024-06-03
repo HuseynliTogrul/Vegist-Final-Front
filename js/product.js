@@ -6,24 +6,10 @@ img.onmousemove = function (e) {
 }
 
 
-const SDetailLi = document.querySelectorAll(".SDetailLi");
-const MDetailLi = document.querySelectorAll(".MDetailLi");
-
-const detailImgSlider = document.querySelectorAll(".detailImg-slider img");
-
-const mainImage = document.querySelector(".mainImage")
-const slideImage = document.querySelectorAll(".slideImage")
-const detailImg = document.querySelector(".detail-img")
-
-const previousBtn = document.querySelector(".previous")
-const nextBtn = document.querySelector(".next")
-
-const sizeSpan = document.querySelector(".sizeSpan")
-const materialSpan = document.querySelector(".materialSpan")
-
-
-
 // Size product
+
+const SDetailLi = document.querySelectorAll(".SDetailLi");
+const sizeSpan = document.querySelector(".sizeSpan")
 
 SDetailLi.forEach((size) => {
   size.addEventListener("click", () => {
@@ -39,6 +25,9 @@ SDetailLi.forEach((size) => {
 
 // Material product
 
+const MDetailLi = document.querySelectorAll(".MDetailLi");
+const materialSpan = document.querySelector(".materialSpan")
+
 MDetailLi.forEach((material) => {
   material.addEventListener("click", () => {
     MDetailLi.forEach((resetM) => {
@@ -52,6 +41,7 @@ MDetailLi.forEach((material) => {
 
 
 // Detail img 
+const detailImgSlider = document.querySelectorAll(".detailImg-slider img");
 
 detailImgSlider.forEach(imgSlider => {
   imgSlider.addEventListener("click", () => {
@@ -67,11 +57,17 @@ detailImgSlider.forEach(imgSlider => {
 
 //Product images
 
+const mainImage = document.querySelector(".mainImage")
+const slideImage = document.querySelectorAll(".slideImage")
+const detailImg = document.querySelector(".detail-img")
+
+const previousBtn = document.querySelector(".previous")
+const nextBtn = document.querySelector(".next")
+
 thumbnailClick = (event) => {
   slideImage.forEach(img => {
     img.classList.remove('active')
   })
-  // event.target.parentElement.classList.add('active')
   mainImage.src = event.target.src.replace('-thumbnail', '')
 }
 
@@ -112,3 +108,35 @@ setMainImage = (imageIndex) => {
 
 nextBtn.addEventListener('click', nextBtnClick)
 previousBtn.addEventListener('click', previousBtnClick)
+
+
+// Product Count +-
+
+const plusCount = document.querySelector(".plusCount");
+const minusCount = document.querySelector(".minusCount");
+const counter = document.querySelector(".counter");
+
+let count = 1;
+counter.value = count;
+
+plusCount.addEventListener("click", () => {
+  if (count < 10) {
+    count++;
+  }
+  counter.value = count;
+
+  if(count === 10){
+    plusCount.style.cursor = "no-drop";
+  }
+})
+
+minusCount.addEventListener("click", () => {
+  if (count > 1) {
+    count--;
+  }
+  counter.value = count;
+
+  if(count === 1){
+    minusCount.style.cursor = "no-drop";
+  }
+})

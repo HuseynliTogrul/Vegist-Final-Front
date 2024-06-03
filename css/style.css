@@ -735,6 +735,14 @@ header .line {
     font-size: 20px;
 }
 
+.heart {
+    cursor: pointer;
+}
+
+.heart.filled {
+    color: black;
+}
+
 /* productSection end */
 /* categorySection start */
 
@@ -925,10 +933,6 @@ header .line {
     max-height: 500px;
     visibility: visible;
     opacity: 1;
-}
-
-.fa-minus {
-    display: none !important;
 }
 
 .footerSubList {
