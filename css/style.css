@@ -664,6 +664,7 @@ header .line {
     border-radius: 3px;
     transition: all 0.3s linear;
     display: none;
+    cursor: pointer;
 }
 
 .productIcon i:hover {

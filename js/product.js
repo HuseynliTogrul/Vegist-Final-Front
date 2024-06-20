@@ -127,6 +127,8 @@ plusCount.addEventListener("click", () => {
 
   if(count === 10){
     plusCount.style.cursor = "no-drop";
+  }else{
+    plusCount.style.cursor = "pointer";
   }
 })
 
@@ -138,5 +140,7 @@ minusCount.addEventListener("click", () => {
 
   if(count === 1){
     minusCount.style.cursor = "no-drop";
+  }else{
+    minusCount.style.cursor = "pointer";
   }
 })
